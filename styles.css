@@ -1,0 +1,144 @@
+.game {
+    height: 600px;
+    width: 800px;
+    position: absolute;
+    /* border: 2px solid; */
+    left: 50px;
+}
+
+.sky {
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    background-color: rgb(91, 160, 160);
+}
+
+.cloud {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    /* top: 150px; */
+}
+
+.cloud::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: inherit;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    left: 70px;
+}
+
+.cloud::after {
+    content: "";
+    height: 80px;
+    width: 50px;
+    background-color: inherit;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    bottom: 0px;
+    left: 35px;
+}
+
+.score {
+    font-family: cursive, sans-serif;
+    font-size: 2rem;
+}
+
+#score {
+    display: block;
+    position: absolute;
+    font-family: cursive, sans-serif;
+    right: 10px;
+    top: 3px;
+    font-size: 2rem;
+}
+
+.dino {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+
+}
+
+.head {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: rgb(206, 184, 58);
+    border-radius: 25%;
+}
+
+.eye {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+    left: 10px;
+    top: 5px;
+}
+
+.beak {
+    position: absolute;
+    border-bottom: 2vh solid red;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    left: 25px;
+    top: 0px;
+    transform: rotate(90deg);
+}
+
+.left-foot {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(63, 62, 62);
+    top: 20px;
+    border-radius: 0 0 50% 50%;
+}
+
+.ground {
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    background-color:brown;
+    bottom: 0;
+    z-index: 1;
+}
+
+.box {
+    height: 90px;
+    width: 10px;
+    position: absolute;
+    background-color: rgb(14, 13, 13);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.game-over {
+    color: black;
+    font-size: 1.8rem;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    height: 65px;
+    width: 250px;
+    padding-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: cursive, sans-serif;
+}
+
+.header {
+    color: black;
+    font-size: 3rem;
+    font-family: cursive, sans-serif;
+    position: absolute;
+    left: 30%;
+    top: 320px
+}
